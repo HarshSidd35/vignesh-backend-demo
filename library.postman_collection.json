@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "5b6f0b6d-eec1-4156-9657-262978359e1f",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37238531"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODc4MzUsImV4cCI6MTc0MzU5MTQzNX0.uLUyHVctgzZa5S5nc-aXPItxm7e_I37idqhguyJ-2mE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@example.com\",\r\n    \"password\":\"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjUiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzQzNTg2OTI4LCJleHAiOjE3NDM1OTA1Mjh9.YGHBih_OOo255deAXC4sKpI5cokrA3ZzW8VqjUWhotw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"john@example.com\",\r\n    \"password\":\"password123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODQwMTksImV4cCI6MTc0MzU4NzYxOX0.nWa78xn3AhnCI4nlwYxkezWSxN4hrDic3hKfNklHs_k",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODQwMTksImV4cCI6MTc0MzU4NzYxOX0.nWa78xn3AhnCI4nlwYxkezWSxN4hrDic3hKfNklHs_k\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-a-book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODYxOTMsImV4cCI6MTc0MzU4OTc5M30.ZWqC8MrQcyCQkpIdiYK5S3VTaD4HoTz9RRPmXKoBHdo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "The Great Gatsby",
+							"type": "text"
+						},
+						{
+							"key": "rent",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "count",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "cover",
+							"type": "file",
+							"src": "/C:/Users/harsh/OneDrive/Pictures/3094102.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODYxOTMsImV4cCI6MTc0MzU4OTc5M30.ZWqC8MrQcyCQkpIdiYK5S3VTaD4HoTz9RRPmXKoBHdo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/books?page=1&limit=10&name=1984&available=true&minRent=5&maxRent=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "name",
+							"value": "1984"
+						},
+						{
+							"key": "available",
+							"value": "true"
+						},
+						{
+							"key": "minRent",
+							"value": "5"
+						},
+						{
+							"key": "maxRent",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-book-by-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODYxOTMsImV4cCI6MTc0MzU4OTc5M30.ZWqC8MrQcyCQkpIdiYK5S3VTaD4HoTz9RRPmXKoBHdo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/books/67ecf778b13cc4e8b2596969",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"67ecf778b13cc4e8b2596969"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODYxOTMsImV4cCI6MTc0MzU4OTc5M30.ZWqC8MrQcyCQkpIdiYK5S3VTaD4HoTz9RRPmXKoBHdo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "the wings of fire",
+							"type": "text"
+						},
+						{
+							"key": "rent",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "count",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "cover",
+							"type": "file",
+							"src": "/D:/Vignesh inc/backend/uploads/the wings of fire.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/books/67ecf778b13cc4e8b2596969",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"67ecf778b13cc4e8b2596969"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODYxOTMsImV4cCI6MTc0MzU4OTc5M30.ZWqC8MrQcyCQkpIdiYK5S3VTaD4HoTz9RRPmXKoBHdo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/books/67ecf778b13cc4e8b2596968",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"67ecf778b13cc4e8b2596968"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rent a book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODc4MzUsImV4cCI6MTc0MzU5MTQzNX0.uLUyHVctgzZa5S5nc-aXPItxm7e_I37idqhguyJ-2mE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"67ecf6b413afe89059669c6c\",\r\n  \"fromDate\": \"2025-04-02\",\r\n  \"toDate\": \"2025-04-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/books/67ecf778b13cc4e8b2596968/addLastUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"67ecf778b13cc4e8b2596968",
+						"addLastUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "returning-book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2VjZjc3OGIxM2NjNGU4YjI1OTY5NjMiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3NDM1ODYxOTMsImV4cCI6MTc0MzU4OTc5M30.ZWqC8MrQcyCQkpIdiYK5S3VTaD4HoTz9RRPmXKoBHdo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"65f3a2b5e4a7c95d2c8f93b1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/books/67ecf778b13cc4e8b2596968/return",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"67ecf778b13cc4e8b2596968",
+						"return"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"abc\",\r\n    \"email\":\"abc@example.com\",\r\n    \"password\":\"pass123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
